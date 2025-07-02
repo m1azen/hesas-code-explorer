@@ -1,19 +1,21 @@
-import Header from "@/components/Header";
-import Hero from "@/components/Hero";
-import About from "@/components/About";
-import Services from "@/components/Services";
-import Contact from "@/components/Contact";
-import Footer from "@/components/Footer";
+import HesasHeader from "@/components/HesasHeader";
+import HesasHero from "@/components/HesasHero";
+import HesasAbout from "@/components/HesasAbout";
+import HesasPaymentMethods from "@/components/HesasPaymentMethods";
+import HesasPackages from "@/components/HesasPackages";
+import HesasJoinMethods from "@/components/HesasJoinMethods";
+import HesasFooter from "@/components/HesasFooter";
 
 const Index = () => {
   return (
     <div className="min-h-screen">
-      <Header />
-      <Hero />
-      <About />
-      <Services />
-      <Contact />
-      <Footer />
+      <HesasHeader />
+      <HesasHero />
+      <HesasAbout />
+      <HesasPaymentMethods />
+      <HesasPackages />
+      <HesasJoinMethods />
+      <HesasFooter />
     </div>
   );
 };

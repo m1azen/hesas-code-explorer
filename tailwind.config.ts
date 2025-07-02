@@ -68,8 +68,9 @@ export default {
 				}
 			},
 			backgroundImage: {
-				'gradient-primary': 'var(--gradient-primary)',
-				'gradient-hero': 'var(--gradient-hero)'
+				'gradient-hero': 'var(--gradient-hero)',
+				'gradient-dark': 'var(--gradient-dark)',
+				'overlay-purple': 'var(--overlay-purple)'
 			},
 			boxShadow: {
 				'elegant': 'var(--shadow-elegant)',
