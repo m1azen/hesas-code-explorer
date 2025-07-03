@@ -1,29 +1,340 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>حصص مصر - منصة تعليمية معتمدة من وزارة التربية والتعليم</title>
     <meta name="description" content="منصة تعليمية معتمدة من وزارة التربية والتعليم المصرية تقدم المناهج الدراسية للصف الثالث الإعدادي حتى الثالث الثانوي" />
-    <meta name="author" content="HESAS" />
     
     <!-- Arabic Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <!-- Logo -->
+                <div class="logo-section">
+                    <div class="logo-icon">
+                        <span>ح</span>
+                    </div>
+                    <div class="logo-text">
+                        <h1>حصص مصر</h1>
+                        <div class="logo-badge">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Coat_of_arms_of_Egypt_%28Official%29.svg/150px-Coat_of_arms_of_Egypt_%28Official%29.svg.png" alt="شعار الجمهورية">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Navigation -->
+                <div class="nav-links">
+                    <a href="#" class="nav-link active">الرئيسية</a>
+                    <a href="#about" class="nav-link">عن حصص مصر</a>
+                    <a href="#packages" class="nav-link">باقات حصص مصر</a>
+                    <a href="#payment" class="nav-link">طرق الدفع</a>
+                    <a href="#join" class="nav-link">طرق الانضمام</a>
+                </div>
+                
+                <!-- Login Button -->
+                <button class="login-btn">تسجيل دخول</button>
+                
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
 
-    <meta property="og:title" content="حصص مصر - منصة تعليمية معتمدة من وزارة التربية والتعليم" />
-    <meta property="og:description" content="منصة تعليمية معتمدة من وزارة التربية والتعليم المصرية تقدم المناهج الدراسية للصف الثالث الإعدادي حتى الثالث الثانوي" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        
+        <!-- Floating elements -->
+        <div class="floating-element floating-1"></div>
+        <div class="floating-element floating-2"></div>
+        
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>
+                    منصة تعليمية معتمدة من وزارة
+                    <br>
+                    <span class="accent-text">التربية و التعليم</span>
+                </h1>
+                
+                <p>
+                    تقدم المناهج الدراسية بدءاً من الصف الثالث الإعدادي وحتى
+                    <br>
+                    الثالث الثانوي
+                </p>
+                
+                <button class="hero-btn">تسجيل دخول</button>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <div class="scroll-line">
+                <div class="scroll-dot"></div>
+            </div>
+        </div>
+    </section>
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-  </head>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-grid">
+                <!-- Text Content -->
+                <div class="about-text">
+                    <h2>اعرف أكثر عن محتوى حصص مصر</h2>
+                    
+                    <div class="about-content">
+                        <p>
+                            منصة تعليم إلكتروني مقدمة من وزارة التربية والتعليم المصرية. توفر 
+                            المناهج الموارد للطلاب من الصف الثالث الإعدادي حتى الصف الثالث 
+                            الثانوي. فيها يلي ملخص سريع لما تقدمه هيئة مصر:
+                        </p>
+                        
+                        <div class="about-points">
+                            <p>• <strong>المواد الدراسية:</strong> اللغة العربية واللغة الإنجليزية واللغة الفرنسية</p>
+                            <p class="indent">ومختلف المواد العلمية والإنسانية وفقاً <span class="primary-text">للمناهج المصرية</span></p>
+                            
+                            <p>• <strong>المحتوى:</strong> دروس تفاعلية، ومراجعات المواد الدراسية، وامتحانات</p>
+                            <p class="indent">تجريبية من إعداد <span class="destructive-text">معلمين معتمدين</span> من الوزارة.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Image -->
+                <div class="about-image">
+                    <div class="image-container">
+                        <img src="src/assets/about-bg.jpg" alt="طالب يدرس">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+    <!-- Payment Methods Section -->
+    <section id="payment" class="payment-methods">
+        <div class="container">
+            <div class="section-header">
+                <h2>تقدر تشترك بكل طرق الدفع الممكنة</h2>
+            </div>
+            
+            <div class="payment-grid">
+                <!-- Fawry -->
+                <div class="payment-category">
+                    <h3>فوري</h3>
+                    <div class="payment-card single">
+                        <div class="placeholder-logo">فوري</div>
+                    </div>
+                </div>
+                
+                <!-- Digital Wallets -->
+                <div class="payment-category">
+                    <h3>المحفظة الإلكترونية</h3>
+                    <div class="payment-cards">
+                        <div class="payment-card">
+                            <div class="placeholder-logo">اتصالات كاش</div>
+                        </div>
+                        <div class="payment-card">
+                            <div class="placeholder-logo">فودافون كاش</div>
+                        </div>
+                        <div class="payment-card">
+                            <div class="placeholder-logo">أورانج موني</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Bank Cards -->
+                <div class="payment-category">
+                    <h3>الكارت البنكي</h3>
+                    <div class="payment-cards">
+                        <div class="payment-card">
+                            <div class="placeholder-logo">فيزا</div>
+                        </div>
+                        <div class="payment-card">
+                            <div class="placeholder-logo">ماستركارد</div>
+                        </div>
+                        <div class="payment-card">
+                            <div class="placeholder-logo">أمان</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section id="packages" class="packages">
+        <div class="packages-bg">
+            <div class="bg-pattern bg-pattern-1"></div>
+            <div class="bg-pattern bg-pattern-2"></div>
+        </div>
+        
+        <div class="container">
+            <div class="section-header">
+                <h2>باقات حصص مصر التعليمية</h2>
+                <p>تعرف على الكورسات والمواد التعليمية داخل باقات حصص مصر</p>
+            </div>
+            
+            <!-- Language Selection -->
+            <div class="language-selection">
+                <div class="language-tabs">
+                    <button class="language-tab active">مدارس اللغة العربية</button>
+                    <button class="language-tab">مدارس اللغة الإنجليزية</button>
+                    <button class="language-tab">مدارس اللغة الفرنسية</button>
+                </div>
+            </div>
+            
+            <!-- Packages Grid -->
+            <div class="packages-grid">
+                <div class="package-card">
+                    <div class="package-header">
+                        <h3>باقة الصف الثالث الإعدادي</h3>
+                    </div>
+                    <div class="package-content">
+                        <p class="package-price">السعر 100 جنيه</p>
+                        <button class="package-btn">اشترك الآن</button>
+                    </div>
+                </div>
+                
+                <div class="package-card">
+                    <div class="package-header">
+                        <h3>باقة الصف الأول الثانوي</h3>
+                    </div>
+                    <div class="package-content">
+                        <p class="package-price">السعر 100 جنيه</p>
+                        <button class="package-btn">اشترك الآن</button>
+                    </div>
+                </div>
+                
+                <div class="package-card">
+                    <div class="package-header">
+                        <h3>باقة الصف الثاني الثانوي أدبي</h3>
+                    </div>
+                    <div class="package-content">
+                        <p class="package-price">السعر 100 جنيه</p>
+                        <button class="package-btn">اشترك الآن</button>
+                    </div>
+                </div>
+                
+                <div class="package-card">
+                    <div class="package-header">
+                        <h3>باقة الصف الثاني الثانوي علمي</h3>
+                    </div>
+                    <div class="package-content">
+                        <p class="package-price">السعر 100 جنيه</p>
+                        <button class="package-btn">اشترك الآن</button>
+                    </div>
+                </div>
+                
+                <div class="package-card">
+                    <div class="package-header">
+                        <h3>باقة الصف الثالث الثانوي أدبي</h3>
+                    </div>
+                    <div class="package-content">
+                        <p class="package-price">السعر 100 جنيه</p>
+                        <button class="package-btn">اشترك الآن</button>
+                    </div>
+                </div>
+                
+                <div class="package-card">
+                    <div class="package-header">
+                        <h3>باقة الصف الثالث الثانوي علمي رياضة</h3>
+                    </div>
+                    <div class="package-content">
+                        <p class="package-price">السعر 100 جنيه</p>
+                        <button class="package-btn">اشترك الآن</button>
+                    </div>
+                </div>
+                
+                <div class="package-card">
+                    <div class="package-header">
+                        <h3>باقة الصف الثالث الثانوي علمي علوم</h3>
+                    </div>
+                    <div class="package-content">
+                        <p class="package-price">السعر 100 جنيه</p>
+                        <button class="package-btn">اشترك الآن</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join Methods Section -->
+    <section id="join" class="join-methods">
+        <div class="container">
+            <div class="section-header">
+                <h2>ازاي نضم لحصص مصر</h2>
+                <p>نقدر نسجل دخول بثلاث طرق مختلفة</p>
+            </div>
+            
+            <div class="join-grid">
+                <div class="join-method">
+                    <div class="join-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>الإيميل</h3>
+                    <p>قم بالتسجيل باستخدام البريد الإلكتروني</p>
+                </div>
+                
+                <div class="join-method">
+                    <div class="join-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>رقم الموبايل</h3>
+                    <p>سجل دخولك برقم الهاتف المحمول</p>
+                </div>
+                
+                <div class="join-method">
+                    <div class="join-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>الحساب المدرسي الموحد</h3>
+                    <p>استخدم حسابك المدرسي للدخول المباشر</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Coat_of_arms_of_Egypt_%28Official%29.svg/150px-Coat_of_arms_of_Egypt_%28Official%29.svg.png" alt="شعار الجمهورية">
+                    <div class="footer-text">
+                        <h3>حصص مصر</h3>
+                        <p>وزارة التربية والتعليم المصرية</p>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <a href="#">الشروط والأحكام</a>
+                    <a href="#">سياسة الخصوصية</a>
+                    <a href="#">اتصل بنا</a>
+                </div>
+                
+                <div class="footer-copyright">
+                    © 2024 حصص مصر. جميع الحقوق محفوظة.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
